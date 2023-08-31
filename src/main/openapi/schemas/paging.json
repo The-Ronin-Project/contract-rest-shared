@@ -2,8 +2,8 @@
   "openapi": "3.0.2",
   "paths": {},
   "info": {
-    "title": "Paging",
-    "version": "1.0"
+    "title": "",
+    "version": ""
   },
   "components": {
     "schemas": {
