@@ -1,0 +1,37 @@
+{
+  "openapi": "3.0.2",
+  "paths": {},
+  "info": {
+    "title": "Paging",
+    "version": "1.0"
+  },
+  "components": {
+    "schemas": {
+      "Paging": {
+        "title": "Paging Information",
+        "description": "Paging information to provide the needed information for API clients to manage pages",
+        "type": "object",
+        "properties": {
+          "cursor": {
+            "type": "string"
+          },
+          "limit": {
+            "type": "integer"
+          },
+          "previousCursor": {
+            "type": "string"
+          },
+          "nextCursor": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "cursor",
+          "limit",
+          "previousCursor",
+          "nextCursor"
+        ]
+      }
+    }
+  }
+}
