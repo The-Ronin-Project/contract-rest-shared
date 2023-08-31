@@ -7,8 +7,8 @@
   },
   "components": {
     "schemas": {
-      "PagingResponse": {
-        "title": "PagingResponse",
+      "PagedResponse": {
+        "title": "Paged Response",
         "description": "The response to a paged query",
         "properties": {
           "paging": {
