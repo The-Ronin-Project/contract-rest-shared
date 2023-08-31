@@ -2,7 +2,7 @@
   "openapi": "3.0.2",
   "info": {
     "title": "Shared API - OpenAPI 3.0",
-    "description": "Document API swagger",
+    "description": "Shared API swagger",
     "contact": {
       "email": "pecore@projectronin.com"
     },
@@ -24,7 +24,9 @@
   "components": {
     "securitySchemes": {},
     "schemas": {
-      "$ref": "schemas/paged-response.json#/components/schemas/PagedResponse"
+      "PagedResponse": {
+        "$ref": "schemas/paged-response.json#/components/schemas/PagedResponse"
+      }
     }
   }
 }

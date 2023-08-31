@@ -15,7 +15,10 @@
             "$ref": "paging.json#/components/schemas/Paging"
           },
           "data": {
-            "type": "array"
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
           }
         },
         "required": [
