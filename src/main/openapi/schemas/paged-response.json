@@ -1,0 +1,31 @@
+{
+  "openapi": "3.0.2",
+  "paths": {},
+  "info": {
+    "title": "",
+    "version": ""
+  },
+  "components": {
+    "schemas": {
+      "PagedResponse": {
+        "title": "Paged Response",
+        "description": "The response to a paged query",
+        "properties": {
+          "paging": {
+            "$ref": "paging.json#/components/schemas/Paging"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "oneOf": [{ "type": "object" }]
+            }
+          }
+        },
+        "required": [
+          "paging",
+          "data"
+        ]
+      }
+    }
+  }
+}
