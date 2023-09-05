@@ -17,7 +17,7 @@
           "data": {
             "type": "array",
             "items": {
-              "type": "object"
+              "oneOf": [{ "type": "object" }]
             }
           }
         },
