@@ -1,0 +1,67 @@
+{
+  "openapi": "3.0.2",
+  "paths": {},
+  "info": {
+    "title": "",
+    "version": ""
+  },
+  "components": {
+    "schemas": {
+      "Error": {
+        "title": "Error",
+        "description": "Common error response for REST services",
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "This is a unique identifier for this instance of the error. This MUST be included. This id SHOULD be used in logging of the providing service to provide a fast way to search for the context of the specific failure.,",
+            "type": "string"
+          },
+          "source": {
+            "description": "Name of the service that threw the exception. MUST be supplied and used in case the error came somewhere mid call chain between services. If wrapping exception from external system, must be done at the point of calling the external system.,",
+            "type": "string"
+          },
+          "httpStatus": {
+            "description": "A human readable message that describes the type of failure. This SHOULD NOT change between instances of this error. This MUST be included.,",
+            "type": "string"
+          },
+          "status": {
+            "description": "This is the HTTP status code applicable to the error. This MUST be provided.,",
+            "type": "integer"
+          },
+          "error": {
+            "description": "Human readable form of the exception or httpStatus. This MUST be included.,",
+            "type": "string"
+          },
+          "exception": {
+            "description": "The exception class SHOULD be included to aid in tracking down the exception.,",
+            "type": "string"
+          },
+          "message": {
+            "description": "Human readable exception message MUST be provided being clear and concise.,",
+            "type": "string"
+          },
+          "detail": {
+            "description": "A human readable message that describes the specific failure. This should have specific information regarding the specific of the error. This MUST be included, but MUST NOT contain ePHI.,",
+            "type": "string"
+          },
+          "timestamp": {
+            "description": "the timestamp the error occurred",
+            "type": "string",
+            "format": "date-time"
+          },
+          "stacktrace": {
+            "description": "On development and test systems, a stacktraces for the exception",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "httpStatus",
+          "status",
+          "exception",
+          "message"
+        ]
+      }
+    }
+  }
+}
