@@ -26,6 +26,9 @@
     "schemas": {
       "PagedResponse": {
         "$ref": "schemas/paged-response.json#/components/schemas/PagedResponse"
+      },
+      "Error": {
+        "$ref": "schemas/error.json#/components/schemas/Error"
       }
     }
   }
